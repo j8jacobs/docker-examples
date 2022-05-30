@@ -3,6 +3,9 @@
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res) => res.send('Hello World!'))
-app.listen(3000, () => console.log('Server ready'))
+app.get('/', (req, res) => res.json({
+	msg: 'Hello World',
+	env: process.env
+}))
 
+app.listen(3000, () => console.log('Server ready'))
