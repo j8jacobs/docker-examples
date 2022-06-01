@@ -1,0 +1,5 @@
+services:
+  webapp:
+    image: public.ecr.aws/d1r2c9t8/test
+    ports:
+      - "3000:3000"
